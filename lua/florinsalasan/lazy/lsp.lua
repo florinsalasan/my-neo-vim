@@ -34,7 +34,6 @@ return {
                 'dockerls',
                 'gopls',
                 'htmx',
-                'sourcery',
                 'sqls',
 
         },
@@ -73,8 +72,8 @@ return {
             },
             mapping = cmp.mapping.preset.insert({
                 ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-                ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-                ['<C-y>'] = cmp.mapping.confirm({select = true}),
+                ['<C-i>'] = cmp.mapping.select_next_item(cmp_select),
+                ['<C-o>'] = cmp.mapping.confirm({select = true}),
                 ['<C-Space>'] = cmp.mapping.complete(),
             }),
             sources = cmp.config.sources({

@@ -1,4 +1,14 @@
-function ColorMyPencils(color)
+return {
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+        require 'nordic' .load()
+    end
+}
+
+
+--[[function ColorMyPencils(color)
     color = color or 'rose-pine' 
     vim.cmd.colorscheme(color)
 
@@ -39,3 +49,4 @@ return {
     },
 
 }
+]]--
