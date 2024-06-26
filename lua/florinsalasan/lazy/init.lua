@@ -10,4 +10,5 @@ return {
 		]]--
 		'gpanders/editorconfig.nvim',
 
+
 }
